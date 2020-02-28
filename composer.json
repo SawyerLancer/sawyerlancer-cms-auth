@@ -1,0 +1,40 @@
+{
+    "name": "sawyerlancer/sawyerlancer_cms_auth",
+    "description": "Базовая авторизация и регистрация в cms",
+    "type": "library",
+    "keywords": [
+        "sawyerlancer_cms",
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Nikita Livadchenko",
+            "email": "soldier707sawyer@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "orchestra/testbench" : "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sawyerlancer\\Auth\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sawyerlancer\\Auth\\Tests\\": "./test"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sawyerlancer\\Auth\\SawyerLancerAuthServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Sawyerlancer\\Auth\\SawyerLancerAuthFacade"
+            }
+        }
+    }
+}
