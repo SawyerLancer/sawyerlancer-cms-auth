@@ -2,6 +2,7 @@
     "name": "sawyerlancer/sawyerlancer_cms_auth",
     "description": "Базовая авторизация и регистрация в cms",
     "type": "library",
+    "license": "MIT",
     "keywords": [
         "sawyerlancer_cms",
         "laravel"
